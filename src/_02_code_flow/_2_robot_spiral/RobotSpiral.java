@@ -12,6 +12,15 @@ public class RobotSpiral {
 	public static void main(String[] args) {
 		
 		// Create a new Robot
+		Robot rob = new Robot();
+		rob.penDown();
+		rob.setSpeed(100);
+		for(int i=1;i<51;i++) {
+			rob.setRandomPenColor();
+			rob.move(i*5);
+			rob.turn(360/7);
+			rob.setPenWidth(i);
+		}
 		
 		// Set your robot's pen down 
 		

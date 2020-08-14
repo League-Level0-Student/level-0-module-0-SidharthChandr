@@ -14,6 +14,12 @@ public class RobotSquare {
  
     	// This code makes a new Robot
     	Robot rob = new Robot();
+    	for(int t=1; t<5; t++) {
+	    	rob.penDown();
+	    	rob.setSpeed(100);
+	    	rob.move(100);
+	    	rob.turn(90);
+    	}
 
         // Put the robot's pen down so it can draw
 		//        Use the     rob.penDown();   command.
